@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.doctor-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+}
+
+.doctor-content {
+  display: flex;
+  flex-direction: column; /* Stack content vertically on smaller screens */
+  gap: 20px;
+}
+
+.image-section {
+  width: 100%;
+  text-align: center; /* Center align image on all screen sizes */
+}
+
+.doctor-image {
+  width: 100%;
+  max-width: 400px; /* Limit image width to avoid overflow on smaller screens */
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.text-section {
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.text-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center; /* Center align heading on all screen sizes */
+}
+
+.doctor-p {
+  padding: 0 20px; /* Add padding to text for better readability */
+}
+
+@media (min-width: 768px) {
+  .doctor-content {
+    flex-direction: row; /* Align content side by side on tablets and larger screens */
+    align-items: center;
+  }
+
+  .text-section {
+    max-width: 60%; /* Limit text section width on larger screens */
+  }
+}

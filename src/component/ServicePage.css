@@ -1,0 +1,154 @@
+.service-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #ffffff;
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.service-menu {
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.service-topic {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.service-topic.selected {
+  background-color: #e0e0e0; /* Background color when selected */
+}
+
+.service-sub-topic {
+  padding: 10px;
+  margin: 20px 0;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.service-sub-topic div {
+  cursor: pointer;
+  padding: 8px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.service-sub-topic div:hover {
+  background-color: #f0f0f0; /* Hover background color */
+}
+
+.service-main-content {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.service-main-content .heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.service-main-content .headingclass {
+  text-align: center;
+
+  padding: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.service-main-content .headingclass .image {
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 350px;
+}
+
+.service-main-content .headingcontent {
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .service-page {
+    padding: 10px;
+  }
+
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-menu {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-menu {
+    padding: 10px;
+  }
+
+  .banner-text {
+    padding: 10px;
+  }
+
+  .service-sub-topic {
+    margin: 10px 0; /* Adjusted margin for smaller screens */
+  }
+}

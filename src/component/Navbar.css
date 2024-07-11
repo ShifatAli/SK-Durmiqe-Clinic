@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar .logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar .logo-img {
+  height: 32px;
+}
+
+.navbar .spanDermique {
+  font-size: 24px;
+  margin-left: 10px;
+
+  text-decoration: dashed;
+}
+
+.navbar .logo-tag {
+  font-size: 12px;
+  color: #000000;
+}
+
+.navbar .menu-section {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .menu-item {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+}
+
+.navbar .menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.navbar .appointment-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .appointment-button {
+  background-color: rgb(120, 120, 120);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar .appointment-button:hover {
+  background-color: rgb(112, 109, 80);
+}
+
+.navbar .hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar .menu-section {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+  }
+
+  .navbar .menu-section.open {
+    display: flex;
+  }
+
+  .navbar .hamburger-menu {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar .hamburger-menu {
+    display: none;
+  }
+}

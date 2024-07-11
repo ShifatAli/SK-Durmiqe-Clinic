@@ -1,0 +1,111 @@
+/* Review.css */
+
+.review-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.review-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.review-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.review-button {
+  background-color:#958a6e;;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.review-button:hover {
+  background-color: #958a6e;;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.review-user-info {
+  text-align: center;
+}
+
+.review-user-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.review-date {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.carousel-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 2rem;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .carousel-button {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .review-card {
+    padding: 10px;
+  }
+}
+
+
